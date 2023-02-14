@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 800px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-top: 15px;
+  border: 2px solid teal;
+  justify-content: space-between;
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.post-enter {
+  transform: translateX(350px);
+  opacity: 0;
+}
+.post-enter-active {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  transform: translateX(-350px);
+  opacity: 0;
+  transition: all 500ms ease-in;
+}
+
