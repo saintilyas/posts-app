@@ -6,7 +6,8 @@
 
 #root {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App {
@@ -20,6 +21,10 @@
   margin-top: 15px;
   border: 2px solid teal;
   justify-content: space-between;
+}
+
+.post__btns {
+  display: flex;
 }
 
 .remove-btn {
@@ -44,3 +49,24 @@
   transition: all 500ms ease-in;
 }
 
+.navbar {
+  height: 50px;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: lightgray;
+}
+
+.navbar__links {
+  margin-left: auto;
+}
+
+.login__btns {
+  display: flex;
+  gap: 10px;
+}
+
+.disable {
+  display: none;
+}

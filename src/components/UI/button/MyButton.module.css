@@ -5,4 +5,11 @@
   background-color: transparent;
   border: 1px solid teal;
   cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.active {
+  background-color: teal;
+  color: white;
+  transition: all 0.3s linear;
 }

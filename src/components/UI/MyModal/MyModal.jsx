@@ -4,7 +4,6 @@ import cl from './MyModal.module.css';
 const MyModal = ({children, visible, setVisible}) => {
 
   const rootClasses = [cl.myModal]
-  console.log(children.length)
   if (visible) {
     rootClasses.push(cl.active)
   }

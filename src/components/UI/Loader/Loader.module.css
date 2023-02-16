@@ -3,7 +3,7 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(150%);
   }
 }
 
@@ -13,5 +13,5 @@
   border-radius: 50%;
   border: 3px dashed teal;
   margin: 50px auto;
-  animation: rotate 5s infinite linear;
+  animation: rotate 3s infinite linear alternate;
 }
