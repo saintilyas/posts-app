@@ -15,8 +15,9 @@ const Navbar = () => {
     <div className={isAuth ? "navbar" : "navbar disable"}>
     <MyButton onClick={logout}>Log out</MyButton>
       <div className="navbar__links">
-        <Link to="/about">About</Link>
-        <Link to="/posts">Posts</Link>
+        <MyButton><Link to="/about" style={{textDecoration:'none', color:'teal'}}>About</Link></MyButton>
+        <MyButton><Link to="/posts" style={{textDecoration:'none', color:'teal'}}>Posts</Link></MyButton>
+       
       </div>
     </div>
   )
